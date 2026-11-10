@@ -1,0 +1,48 @@
+#homepage {
+  height: 82vh;
+  background: linear-gradient(var(--color4), var(--color4), var(--color3));
+  display: grid;
+  grid-template-areas: 
+    'pfp name name'
+    'pfp title title'
+    'sub sub sub';
+  column-gap: 30px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#pfp {
+  height: 140px;
+  grid-area: pfp;
+  aspect-ratio: 11/9;
+
+  object-fit: cover;
+  border-radius: 50px;
+  border: 2px solid var(--color1);
+  transition: all 400ms ease-in-out;
+  
+}
+#homepage:hover #pfp { scale: 0.95; border-width: 12px; }
+#homepage #name {
+  grid-area: name;
+  margin-top: 20px;
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: var(--color1);
+}
+
+#homepage #title {
+  margin-bottom: 20px;
+  grid-area: title;
+  font-size: 1.2rem;
+  color: var(--color2);
+}
+
+#homepage .subtitle {
+  margin-top: 60px;
+  grid-area: sub;
+  font-size: 0.8rem;
+  color: var(--color2);
+}
+

@@ -1,0 +1,41 @@
+:root {
+  
+  --color0: hsl(147, 33%, 15%);
+  --color1: hsl(118, 26%, 27%);
+  --color2: hsl(47, 29%, 34%);
+  --color3: hsl(39, 38%, 62%);
+  --color4: hsl(39, 33%, 90%);
+  --color5: hsl(147, 33%, 10%);
+  
+  letter-spacing: 0.1px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color0: hsl(147, 33%, 14%);
+    --color1: hsl(118, 26%, 30%);
+    --color2: hsl(47, 29%, 44%);
+    --color3: hsl(39, 38%, 15%);
+    --color4: hsl(135, 17%, 10%);
+    --color5: hsl(135, 17%, 6%);
+  }
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  text-align: center;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+

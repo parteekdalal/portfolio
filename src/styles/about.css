@@ -1,0 +1,53 @@
+#about-page {
+  min-height: 60vh;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  background-color: var(--color3);
+}
+.down-arrow {
+  stroke: var(--color2);
+  align-self: center;
+  width: 64px;
+  height: 64px;
+  transition: all 300ms ease-out;
+}
+#about-page:hover .down-arrow {
+  transform: translateY(-30px);
+  scale: 0.8;
+}
+
+#about-page .title { color: var(--color2); cursor: default; }
+#about-page .title .squeezed {
+  font-size: 0.6rem;
+  transition: all 1500ms ease-in-out;
+}
+#about-page .title .squeezed:hover {
+  font-size: 2.4rem;
+  color: var(--color1);
+}
+
+#about-page .about-content {
+  color: var(--color2);
+}
+
+/* @supports (animation-timeline: view()) {
+  html { timeline-scope: --about-page; }
+
+  body {
+    animation: about-background linear both;
+    animation-timeline: --about-page;
+    animation-range: entry 0% exit 100%;
+  }
+
+  @keyframes about-background {
+    0%, 100% { background-color: var(--color0); }
+    25%, 75% { background-color: var(--color3); }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @supports (animation-timeline: view()) {
+    body { animation: ease; }
+  }
+} */
